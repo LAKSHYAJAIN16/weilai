@@ -1,0 +1,138 @@
+.main {
+  position: sticky;
+  z-index: 2;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  margin: none;
+}
+
+.titleWrapper {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.title {
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  font-size: 2em;
+}
+
+.logo {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  cursor: pointer;
+  width: 50%;
+  height: 50%;
+}
+
+.megaWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 14px;
+}
+
+.searchWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  width: 63%;
+  min-height: 30px;
+  border-radius: 20px;
+  background-color: #343434;
+  padding-left: 10px;
+}
+
+.searchInput {
+  min-height: inherit;
+  width: 100%;
+  color: lightgray;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.searchIcon {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  margin-left: 0px;
+  color: lightgray;
+  cursor: pointer;
+}
+
+.leftWrapper {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftItem {
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 3px;
+  zoom: 1.5;
+}
+
+.userWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.userProfilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.tooltipWrapper {
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+}
+
+.tooltip {
+  opacity: 0;
+  position: absolute;
+  margin: 0px 0px 0px 0px;
+  z-index: 2;
+  font-size: 0.7em;
+  background-color: rgba(211, 211, 211, 0.503);
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.button {
+  width: 160px;
+  border-radius: 20px;
+  color: black;
+  background-color: #00ff9d;
+  font-weight: 600;
+  font-size: 1.3em;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+.button:hover{
+  box-shadow: rgba(255, 255, 255, 0.55) 01px 5px 15px;
+}

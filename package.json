@@ -1,0 +1,21 @@
+{
+  "name": "weilai",
+  "private": true,
+  "scripts": {
+    "dev": "set PORT=6206 &&next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "firebase": "^9.6.1",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-timer-hook": "^3.0.5"
+  },
+  "devDependencies": {
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7"
+  }
+}
