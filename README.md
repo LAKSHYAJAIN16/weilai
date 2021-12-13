@@ -1,34 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Weilai
+## An ordinary card game...or is it?
 
-## Getting Started
+### Some Screenshots
+![homepage](https://raw.githubusercontent.com/LAKSHYAJAIN16/weilai/main/assets/Screenshot%20(5).png)
+---
+![leaderboard](https://raw.githubusercontent.com/LAKSHYAJAIN16/weilai/main/assets/Screenshot%20(1).png)
+---
+![holdings](https://raw.githubusercontent.com/LAKSHYAJAIN16/weilai/main/assets/Screenshot%20(4).png)
+---
 
-First, run the development server:
+### Some Information
+Weilai is a card-game created in **48** hours for Clever Programmer's Website Jam Event.
+The Website is currently hosted [here](weilai.vercel.app).
+Weilai means 'future' in mandarin Chineese.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### The Aim of the Game
+**Every hour the stats of your card decrease**. You have to trade your cards before it becomes worthless, and get to the top of the leaderboards.
+That's pretty much it XD.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Stack
+It's built using the FEVNN Stack (Firebase, Express, Vercel, Next JS, Node JS). Express & Node are the Backend, Firebase is the Database, Vercel is the hosting service and Next JS is the Frontend. You could also include React, but then it'll become FEVRNN, which doesn't sound as cool if you ask me.
