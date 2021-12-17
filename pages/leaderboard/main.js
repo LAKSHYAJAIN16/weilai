@@ -30,7 +30,7 @@ export default function Main() {
             (card.health * 1.5 + card.strength * 1.2 + card.intelligence * 1) /
             3.7;
           if (prob !== NaN || prob !== null || prob !== undefined || prob > 0) {
-            score += 100 - prob;
+            score += prob;
           }
         });
         score /= tradable.cards.length;

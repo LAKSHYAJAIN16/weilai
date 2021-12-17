@@ -6,6 +6,7 @@ import ThemeWrapper from "../components/ThemeWrapper";
 import Tradable from "../components/Tradable";
 import Navbar from "../components/Navbar";
 import Timer from "../components/Timer";
+import Update from "../components/Update";
 import { db } from "../logic/firebase";
 
 export default function Marketplace() {
@@ -98,6 +99,7 @@ export default function Marketplace() {
 
         <div className="main_new">
           <Navbar user={user} />
+          <br />
           <div style={{marginTop:"-50px"}}>
             <Timer className="timer" ui={true} subLabel={false}/>
             <p className="timer">Time left til next deduction</p>

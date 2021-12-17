@@ -34,6 +34,7 @@ export default function Explanation() {
                 <img
                   src="https://media0.giphy.com/media/NxGZWHf4tHyyNsd9En/giphy.gif?cid=ecf05e47kqpmflfnorf9c6cvhx91r56g8l2ps537dg9r926t&rid=giphy.gif&ct=g"
                   width={"500px"}
+                  className="jeff"
                 />
                 <div className="mainInfo">
                   <p className="title">This is Jeff!</p>
@@ -70,6 +71,7 @@ export default function Explanation() {
                   frameBorder="0"
                   allowFullScreen
                   style={{ marginTop: "200px" }}
+                  className="jeff"
                 ></iframe>
                 <div className="mainInfo">
                   <p className="title">Pretty Simple Right?</p>
@@ -82,7 +84,7 @@ export default function Explanation() {
                   </p>
                   <p className="sub">
                     So if last hour your card had 70 health, it will have 69
-                    now.
+                    now 😉.
                   </p>
                   <p className="sub">
                     <b>
@@ -101,9 +103,6 @@ export default function Explanation() {
                   <p className="sub">
                     The Goal is to collect Cards and get to the top of the
                     leaderboard 🏅
-                  </p>
-                  <p className="sub">
-                    Now who's gonna get on the top of that leaderboard?
                   </p>
                   <p className="sub">
                     The clock's ticking, you better start soon!
@@ -169,6 +168,23 @@ export default function Explanation() {
 
           b {
             font-weight: 500;
+          }
+
+          @media only screen and (max-width: 600px) {
+            .jeff{
+              display:none;
+              scale:0;
+            }
+
+            .title{
+              padding-left:10px;
+              text-size:2em;
+            }
+
+            .sub{
+              padding-left:10px;
+              text-size:1em;
+            }
           }
         `}
       </style>

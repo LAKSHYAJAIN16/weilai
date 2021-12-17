@@ -4,6 +4,7 @@ import { setDoc, doc, getDoc } from "firebase/firestore";
 
 import ThemeWrapper from "../../components/ThemeWrapper";
 import Navbar from "../../components/Navbar";
+import Update from "../../components/Update";
 import Timer from "../../components/Timer";
 import Card from "../../components/Card";
 import styles from "../../styles/UserHoldings.module.css";
@@ -80,6 +81,7 @@ export default function User() {
       <ThemeWrapper>
         <div className="main_new">
           <Navbar user={user} />
+          <Update />
           <Timer className={styles.timer} />
           <p>Your Cards : </p>
           {userData && (

@@ -20,7 +20,7 @@ export default function Postregistration() {
 
   const selectRandomCards = () => {
     let temp_cards = [];
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 8; i++) {
       temp_cards.push(
         cards[
           Math.min(
@@ -68,6 +68,8 @@ export default function Postregistration() {
               <Card card={card} key={Math.floor(Math.random() * 1617)} />
             ))}
           </div>
+        </div>
+        <div className="main_new_new">
           <button
             className={styles.continueButton}
             onClick={() => pushToBackend()}

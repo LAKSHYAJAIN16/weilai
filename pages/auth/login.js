@@ -8,6 +8,7 @@ import Navbar from "../../components/Navbar";
 import styles from "../../styles/Login.module.css";
 import { auth } from "../../logic/firebase";
 import { db } from "../../logic/firebase";
+import Update from "../../components/Update";
 
 export default function Login() {
   const [user, setUser] = useState(null);
@@ -55,6 +56,7 @@ export default function Login() {
       <ThemeWrapper>
         <div className={styles.main}>
           <Navbar />
+          <Update />
           <div className={styles.content}>
             <div>
               <video
@@ -63,7 +65,7 @@ export default function Login() {
                 style={{ width: "550px" }}
                 className={styles.video}
               >
-                <source src="/visual.mp4" />
+                <source src="https://vod-progressive.akamaized.net/exp=1639674262~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3027%2F12%2F315137080%2F1217035683.mp4~hmac=e7fec1086aac1ee22e38f93bd8dbbfd0e17c9473ee8dfd57ee6204aabcfed94a/vimeo-prod-skyfire-std-us/01/3027/12/315137080/1217035683.mp4?filename=Seoul+-+21116.mp4" />
               </video>
             </div>
             <div className={styles.textWrapper}>
@@ -73,7 +75,7 @@ export default function Login() {
               <p className={styles.subText}>
                 Weilai is the Ultimate card game, packed with energy,
                 <br />
-                logic, and of course, tons of funny puns.
+                logic, and tons of bad(but funny) puns.
                 <br />
                 <br />
                 Battle against time as your cards keep on getting weaker with

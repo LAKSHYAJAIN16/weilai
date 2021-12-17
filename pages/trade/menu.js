@@ -66,24 +66,34 @@ export default function Menu() {
           <option>Agent Vinny</option>
           <option>Dr. Amanda</option>
           <option>Bill</option>
+          <option>Agent Ana</option>
+          <option>Chris Smith</option>
+          <option>Lil' Johnny</option>
+          <option>Kate Not Winslet</option>
+          <option>Andrea Jones</option>
+          <option>Elsa</option>
         </select>
       </>
     );
   };
 
   const submitToBackend = async () => {
+    let temp_price = price;
     const card_id = `${user.displayName}x${cards[id].name}${Math.floor(
       Math.random() * 100
     )}`;
+    if (plus) {
+      temp_price.push(inputRef.current.value);
+    }
+    console.log(temp_price);
     const data = {
-      price: price,
+      price: temp_price,
       username: user.displayName,
       cardName: cards[id].name,
       id: card_id,
       card: cards[id],
     };
     await setDoc(doc(db, "tradables", card_id), data);
-    console.log("trade uploaded!");
     window.location.replace("/marketplace");
   };
 
@@ -112,7 +122,7 @@ export default function Menu() {
                   </p>
                   <div className={styles.optionsWrapper}>
                     {price.map((e) => (
-                      <Option name={e} key={Math.floor(Math.random() * 1617)}/>
+                      <Option name={e} key={Math.floor(Math.random() * 1617)} />
                     ))}
                     {plus && <OptionInput />}
                     <br />

@@ -122,6 +122,7 @@ export default function Specific() {
     await deleteDoc(tradableDoc);
 
     //🤝 Transaction done!
+    window.location.replace("/ui/handshake");
     console.log("If everything went right, there should be a transaction");
     console.log({ purchaserDataF, recipentDataF });
   };
@@ -146,7 +147,9 @@ export default function Specific() {
                 <Card card={cardData.card} />
                 <div className={styles.right}>
                   <h1>{`Trade For ${cardData.cardName}`}</h1>
-                  <h5 style={{textAlign:"center", marginTop:"-30px"}}>{`By ${cardData.username}`}</h5>
+                  <h5
+                    style={{ textAlign: "center", marginTop: "-30px" }}
+                  >{`By ${cardData.username}`}</h5>
                   <p>Requirements : </p>
                 </div>
                 <div
@@ -154,7 +157,7 @@ export default function Specific() {
                   style={{ marginTop: "140px", marginLeft: "-400px" }}
                 >
                   {cardData.price.map((e) => (
-                    <Option name={e} key={Math.floor(Math.random() * 1617)}/>
+                    <Option name={e} key={Math.floor(Math.random() * 1617)} />
                   ))}
                 </div>
               </>
